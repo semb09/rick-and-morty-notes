@@ -1,0 +1,67 @@
+.edit-modal-wrapper {
+  align-items: center;
+  background: rgba(0, 0, 0, .6);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 2rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.edit-modal {
+  background: $cream;
+  border-radius: 1rem;
+  box-shadow: $shadow;
+  max-width: 40rem;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.edit-modal__title {
+  color: $black;
+  display: block;
+  font-family: $header-font;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.edit-modal__close-btn {
+  background: $cream;
+  border-radius: 50%;
+  box-shadow: $shadow;
+  height: 3rem;
+  padding: 0;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  transition: .2s ease;
+  width: 3rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &::before, &::after {
+    background: $black;
+    content: '';
+    display: block;
+    height: .2rem;
+    position: absolute;
+    right: .8rem;
+    top: 1.4rem;
+    width: 1.3rem;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

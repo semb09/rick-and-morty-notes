@@ -1,0 +1,11 @@
+.notifications-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding: 0 2rem;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}

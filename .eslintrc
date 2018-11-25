@@ -9,6 +9,8 @@
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "jsx-a11y/label-has-for": [ 1, { "allowChildren": true }],
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-param-reassign": "off"
   }
 }

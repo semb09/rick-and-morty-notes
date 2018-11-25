@@ -1,0 +1,20 @@
+.notification {
+  align-items: center;
+  background: $positive; //$positive;
+  border: .2rem solid darken($positive, 70); //darken($negative, 30);
+  border-radius: .5rem;
+  color: darken($positive, 70);//$white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  width: 31rem;
+  z-index: 10rem;
+}
+
+.notification--error {
+  background: $negative;
+  border: darken($negative, 30);
+  color: $white;
+}

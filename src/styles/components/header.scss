@@ -1,0 +1,91 @@
+.header {
+  align-items: center;
+  background: $blue;
+  color: $black;
+  display: flex;
+  font-family: $header-font;
+  font-size: 3rem;
+  height: 5rem;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  @media(min-width: $xs) {
+    justify-content: center;
+  }
+}
+
+.header__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 144.4rem;
+  position: relative;
+  width: 100%;
+
+  @media(min-width: $xs) {
+    justify-content: center;
+  }
+}
+
+.header__inner__link {
+  align-items: center;
+  display: flex;
+  line-height: 1;
+  justify-content: center;
+}
+
+.header__inner__link__small-text {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 .6rem;
+}
+
+.header__inner__logout-btn {
+  align-items: center;
+  background: none;
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  height: 5rem;
+  width: 3rem;
+
+  &:hover {
+    .header__inner__logout-btn__icon {
+      fill: lighten($black, 20);
+    }
+  }
+
+  @media(min-width: $xs) {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.header__inner__back-btn {
+  display: flex;
+  justify-content: flex-start;
+  width: 3rem;
+
+  @media(min-width: $xs) {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.header__inner__back-btn__icon {
+  fill: $black;
+  height: 2rem;
+  width: 2rem;
+}
+
+.header__inner__logout-btn__icon {
+  fill: $black;
+  height: 1.6rem;
+  transition: fill .2s;
+  width: 2rem;
+}

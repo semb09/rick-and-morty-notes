@@ -1,0 +1,43 @@
+.input-label {
+  display: inline-block;
+  font-family: $header-font;
+  font-size: 2.4rem;
+  width: 100%;
+}
+
+.input {
+  background: $cream;
+  border-radius: .4rem;
+  color: $black;
+  font-family: $body-font;
+  font-size: 1.6rem;
+  border: none;
+  height: 5rem;
+  padding: .4rem 1.4rem;
+  transition: box-shadow .2s;
+  -webkit-appearance: none;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 3rem $blue;
+  }
+}
+
+.input-error-wrapper {
+  display: block;
+  height: 0;
+  margin: .8rem 0 1.2rem 0;
+  overflow: hidden;
+  transition: height .2s;
+  transform-origin: top;
+}
+
+.input-error-wrapper--error {
+  height: 1.4rem;
+}
+
+.input-error {
+  color: $negative;
+  display: block;
+  font-size: 1.2rem;
+}

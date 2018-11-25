@@ -1,0 +1,41 @@
+.zoom-enter {
+  transform: scale(0);
+}
+
+.zoom-enter-active {
+  transform: scale(1);
+  transition: transform .2s;
+}
+
+.zoom-exit-active {
+  transform: scale(0);
+  transition: transform .2s;
+}
+
+.fade-slow-enter {
+  opacity: 0;
+}
+
+.fade-slow-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.fade-slow-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity .4s;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity .4s;
+}

@@ -1,0 +1,12 @@
+input, textarea {
+  outline: none;
+}
+
+textarea {
+  border: .1rem solid darken($cream, 50);
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+}

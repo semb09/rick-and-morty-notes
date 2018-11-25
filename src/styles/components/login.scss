@@ -1,0 +1,42 @@
+.login-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.login {
+  margin: 2rem;
+  max-width: 32rem;
+}
+
+.login__header {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login__header__sub-title {
+  display: block;
+  font-size: 3rem;
+  line-height: 2rem; 
+  text-align: center;
+}
+
+.login__form__submit {
+  margin-top: 1rem;
+}
+
+.login__form__submit__btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 17rem;
+}
+
+.login__form__submit__btn__loading-icon {
+  max-width: 6rem;
+}

@@ -1,0 +1,28 @@
+.btn-wrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  background: $blue;
+  border: .2rem solid $dark-blue;
+  border-radius: 2.2rem;
+  box-shadow: none;
+  font-family: $header-font;
+  font-size: 2.6rem;
+  height: 4.4rem;
+  padding: .5rem 2rem;
+  transition: box-shadow .5s, opacity .3s;
+
+  &:hover {
+    &:not(:disabled) {
+      box-shadow: 0 0 3rem $green;
+    }
+  }
+
+  &:disabled {
+    color: $black;
+    opacity: .6;
+  }
+}

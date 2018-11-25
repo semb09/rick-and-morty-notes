@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Cookies from 'js-cookie';
 
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import * as serviceWorker from './serviceWorker';
 
 import store, { history } from './store';
+
+import { loginSuccess } from './actions/auth';
 
 import App from './App';
 
@@ -18,6 +21,12 @@ const router = (
     </ConnectedRouter>
   </Provider>
 );
+
+const token = Cookies.get('token');
+
+if (token) {
+  store.dispatch(loginSuccess(token));
+}
 
 ReactDOM.render(
   router,
