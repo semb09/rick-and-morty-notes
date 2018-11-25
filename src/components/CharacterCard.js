@@ -8,16 +8,18 @@ const CharacterCard = ({
 }) => (
   <div className="character-card">
     <div className="character-card__image-wrapper">
-      <button onClick={openEditHandler} type="button" className="character-card__edit-btn">
-        <EditIcon className="character-card__edit-btn__icon" />
-      </button>
-      <Link to={`/single/${id}`}>
-        <img className="character-card__image" src={image} alt={name} />
-      </Link>
-      <div className="character-card__name-wrapper">
-        <span className="character-card__name">
-          {name}
-        </span>
+      <div className="character-card__image__inner">
+        <button onClick={openEditHandler} type="button" className="character-card__edit-btn">
+          <EditIcon className="character-card__edit-btn__icon" />
+        </button>
+        <Link to={`/single/${id}`}>
+          <img className="character-card__image" src={image} alt={name} />
+        </Link>
+        <div className="character-card__name-wrapper">
+          <span className="character-card__name">
+            {name}
+          </span>
+        </div>
       </div>
     </div>
   </div>

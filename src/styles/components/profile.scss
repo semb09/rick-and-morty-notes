@@ -66,6 +66,7 @@
   li {
     border-bottom: .1rem solid lighten($black, 10);
     padding: 1.5rem 0;
+    text-transform: capitalize;
 
     &:last-of-type {
       border: none;

@@ -11,7 +11,6 @@ const Overview = ({
     <TransitionGroup className="overview-wrapper">
       {!characters.loading && Object.keys(characters.results).map(key => (
         <CSSTransition
-          appear
           key={key}
           classNames="fade-slow"
           timeout={800}

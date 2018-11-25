@@ -13,16 +13,20 @@
   background: lighten($black, 20);
   border-radius: 50%;
   display: block;
-  min-height: 15rem;
-  min-width: 15rem;
   width: 100%;
 }
 
 .character-card__image-wrapper {
-  align-items: stretch;
-  display: flex;
-  justify-content: center;
+  padding-bottom: 100%;
   position: relative;
+}
+
+.character-card__image__inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .character-card__name-wrapper {
@@ -41,13 +45,18 @@
   color: $cream;
   display: flex;
   font-family: $headline-font;
-  font-size: 1.6rem;
+  font-size: 2rem;
   justify-content: center;
   letter-spacing: .06rem;
   min-width: 70%;
-  padding: .5rem 1rem .3rem 1rem;
+  padding: .8rem 1.8rem .6rem 1.8rem;
   text-align: center;
   text-transform: uppercase;
+
+  @media(min-width: $xs) {
+    font-size: 1.6rem;
+    padding: .5rem 1rem .3rem 1rem;
+  }
 }
 
 .character-card__edit-btn {
@@ -56,14 +65,19 @@
   border-radius: 50%;
   box-shadow: $shadow;
   display: flex;
-  height: 3.6rem;
+  height: 4.4rem;
   justify-content: center;
   padding: 0;
   position: absolute;
   right: 1rem;
   top: 1rem;
   transition: transform .2s;
-  width: 3.6rem;
+  width: 4.4rem;
+
+  @media(min-width: $xs) {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
 
   &:hover {
     transform: scale(1.1);

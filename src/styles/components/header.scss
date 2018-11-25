@@ -1,34 +1,27 @@
 .header {
   align-items: center;
-  background: $blue;
+  background: rgba(0, 176, 202, .95);
+  box-shadow: $shadow;
   color: $black;
   display: flex;
   font-family: $header-font;
   font-size: 3rem;
   height: 5rem;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0 2rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-
-  @media(min-width: $xs) {
-    justify-content: center;
-  }
 }
 
 .header__inner {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 144.4rem;
   position: relative;
   width: 100%;
-
-  @media(min-width: $xs) {
-    justify-content: center;
-  }
 }
 
 .header__inner__link {
@@ -51,6 +44,8 @@
   display: flex;
   justify-content: flex-end;
   padding: 0;
+  position: absolute;
+  right: 0;
   height: 5rem;
   width: 3rem;
 
@@ -59,22 +54,14 @@
       fill: lighten($black, 20);
     }
   }
-
-  @media(min-width: $xs) {
-    position: absolute;
-    right: 0;
-  }
 }
 
 .header__inner__back-btn {
   display: flex;
   justify-content: flex-start;
+  left: 0;
+  position: absolute;
   width: 3rem;
-
-  @media(min-width: $xs) {
-    position: absolute;
-    left: 0;
-  }
 }
 
 .header__inner__back-btn__icon {
