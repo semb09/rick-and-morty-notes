@@ -19,6 +19,9 @@
 }
 
 .character-card__image-wrapper {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
